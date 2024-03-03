@@ -1,3 +1,32 @@
 fieldset{
     background-color: #f8f9fa;
 }
+/* styles.css */
+
+.relative-container {
+    position: relative;
+    height: 100vh; /* Ensure the form covers the full height of the viewport */
+    margin: 0; /* Remove default margin */
+  }
+  
+  
+  
+  .form-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .small-input {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .dropdown {
+    margin-top: 10px;
+  }
+  
+  /* Add any additional styling for your dropdown menu items as needed */
+  
