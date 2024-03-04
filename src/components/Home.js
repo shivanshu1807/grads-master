@@ -1,21 +1,14 @@
-// Home.js
-
 import React from 'react';
 import AllJobs from './DisplayJobs';
 import { Link } from 'react-router-dom';
-import bg from './bg.png';
-import './styles/home.css'; // Import the CSS file
+import './styles/home.css'; 
 
 function Home() {
-  const backgroundStyle = {
-    backgroundImage: `url(${bg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-  };
-
   return (
-    <div>
-        <form className="d-flex relative-container" style={backgroundStyle}>
+    <div className='container'>
+      <h1 className='para'>Find Your Dream Job</h1>
+      <fieldset className='full'>
+        <form className="d-flex relative-container">
           <div className=" form-content">
             <input className="form-control small-input" type="search" placeholder="Skills" aria-label="Search" />
             <input className="form-control small-input" type="search" placeholder="Experience" aria-label="Search" />
@@ -34,8 +27,9 @@ function Home() {
             <button className="btn btn-outline-success" type="submit">Search</button>
           </div>
         </form>
-      
+        </fieldset>
       <AllJobs />
+      
     </div>
   );
 }

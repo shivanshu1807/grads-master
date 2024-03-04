@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {isEmployeeLoggedIn && (
             <div className="btn-group">
-              <button type="button" className="btn btn-primary dropdown-toggle mx-1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" className="dd btn btn-primary dropdown-toggle mx-1" data-bs-toggle="dropdown" aria-expanded="false">
                 Action
               </button>
               <div className="nav-item dropdown">
@@ -115,7 +115,7 @@ const Navbar = () => {
 
           {isEmployerLoggedIn && (
             <div className="btn-group">
-              <button type="button" className="btn btn-primary dropdown-toggle mx-1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button type="button" className="dd btn btn-primary dropdown-toggle mx-1" data-bs-toggle="dropdown" aria-expanded="false">
                 Action
               </button>
               <li className="nav-item dropdown">
@@ -150,16 +150,16 @@ const Navbar = () => {
 
           {!localStorage.getItem('token') ? (
             <div className="d-flex align-items-center">
-              <Link className="btn btn-primary mx-2" to="/EmployeeLogin" role="button">
+              <Link className="dd btn btn-success mx-2" to="/EmployeeLogin" role="button">
                 Login
               </Link>
-              <Link className="btn btn-primary mx-2" to="/signup" role="button">
+              <Link className="dd btn btn-success mx-2" to="/signup" role="button">
                 Signup
               </Link>
               <div className="btn-group">
                 <button
                   type="button"
-                  className="btn btn-primary dropdown-toggle"
+                  className="dd btn btn-success dropdown-toggle"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -180,7 +180,7 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <button onClick={handleLogout} className="btn btn-primary mx-2">
+            <button onClick={handleLogout} className="dd btn btn-success mx-2">
               Logout
             </button>
           )}
