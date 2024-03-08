@@ -1,37 +1,68 @@
+// import React from 'react';
+// import AllJobs from './DisplayJobs';
+// import { Link } from 'react-router-dom';
+// import './styles/home.css'; 
+// import bg1 from './bg1.jpg'
+
+// function Home() {
+//   return (
+//     <div className='container'>
+//       <img src={bg1} alt="" className='bg1 img-fluid' />
+//       <fieldset className='full'>
+//         <form className="d-flex relative-container">
+//           <div className=" form-content">
+//             <input className="i1 form-control small-input" type="search" placeholder="Skills" aria-label="Search" />
+//             <input className="i1 form-control small-input" type="search" placeholder="Experience" aria-label="Search" />
+//             <select name="Location" id="" className='l1'>
+//               <option value="default">Location</option>
+//               <option value="Uttar Pradesh">Uttar Pradesh</option>
+//             </select>
+//             <button className="s1 btn btn-outline-success" type="submit">Search</button>
+//           </div>
+//         </form>
+//         </fieldset>
+//       <AllJobs />
+      
+//     </div>
+//   );
+// }
+
+// export default Home;
+
 import React from 'react';
 import AllJobs from './DisplayJobs';
 import { Link } from 'react-router-dom';
 import './styles/home.css'; 
+import bg1 from './bg1.jpg';
 
 function Home() {
   return (
+    <>
     <div className='container'>
-      <h1 className='para'>Find Your Dream Job</h1>
-      <fieldset className='full'>
+      {/* Background image */}
+      <img src={bg1} alt="" className='bg1 img-fluid' />
+
+      {/* Search form */}
+      <fieldset className='search-fieldset'>
         <form className="d-flex relative-container">
-          <div className=" form-content">
-            <input className="form-control small-input" type="search" placeholder="Skills" aria-label="Search" />
-            <input className="form-control small-input" type="search" placeholder="Experience" aria-label="Search" />
-            <div className="dropdown">
-              <button className="btn dropdown-toggle" type="button" id="stateDropdown" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select State
-              </button>
-              <div className="dropdown-menu" aria-labelledby="stateDropdown">
-                <Link className="dropdown-item" to="#">Andhra Pradesh</Link>
-                <Link className="dropdown-item" to="#">Arunachal Pradesh</Link>
-                <Link className="dropdown-item" to="#">Assam</Link>
-                {/* ... (rest of your dropdown items) */}
-              </div>
-            </div>
-            <button className="btn btn-outline-success" type="submit">Search</button>
+          <div className="form-content">
+            <input className="i1 form-control small-input" type="search" placeholder="Skills" aria-label="Search" />
+            <input className="i1 form-control small-input" type="search" placeholder="Experience" aria-label="Search" />
+            <select name="Location" id="" className='l1'>
+              <option value="default">Location</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+            </select>
+            <button className="s1 btn btn-outline-success" type="submit">Search</button>
           </div>
         </form>
-        </fieldset>
-      <AllJobs />
-      
+      </fieldset>
+
+      {/* Displaying jobs using AllJobs component */}
     </div>
+    <AllJobs/>
+    </>
   );
 }
 
 export default Home;
+

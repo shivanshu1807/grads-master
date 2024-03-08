@@ -1,19 +1,27 @@
-.container{
+ .container {
+  position: relative;
   margin: auto;
 }
 
-fieldset {
-  display: flex;
-  justify-content: center;
-  background-color: #26ae61;
+.bg1 {
   border-radius: 50px;
-  
+  width: 100%;
+  height: auto;
+  position: relative; /* Added this line */
 }
 
-.relative-container {
+.search-fieldset {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  margin: 0; 
+  align-items: center;
+  background-color: rgba(231, 231, 241, 0.8);
+  border-radius: 50px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .form-content {
@@ -21,7 +29,6 @@ fieldset {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 }
 
 .small-input {
@@ -29,7 +36,27 @@ fieldset {
   margin-right: 10px;
 }
 
-.dropdown {
-  margin-top: 10px;
+.i1 {
+  border-radius: 50px;
 }
 
+.l1 {
+  background-color: white;
+  border-color: white;
+  border-radius: 50px;
+  padding: 5px;
+  margin: auto;
+}
+
+.s1 {
+  color: white;
+  background-color: #26ae61;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 7px;
+}
+
+.l1:hover {
+  border-color: blue;
+}
