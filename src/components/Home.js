@@ -56,8 +56,6 @@ function Home() {
           </div>
         </form>
       </fieldset>
-
-      {/* Displaying jobs using AllJobs component */}
     </div>
     <AllJobs/>
     </>

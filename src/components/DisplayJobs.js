@@ -41,16 +41,16 @@ const AllJobs = () => {
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">{job.title}</h5>
-                  <p class="text-muted">{job.description}</p>
-                  <div class="row btnrow my-4">
-                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-success btn-sm">Full Time</button></div>
-                    <div class="col-4 col-md-3"><button type="button" class="btn btn-outline-primary btn-sm" >Min. 1 year</button></div>
+                  <p className="text-muted">{job.description}</p>
+                  <div className="row btnrow my-4">
+                    <div className="col-4 col-md-3"><button type="button" className="btn btn-outline-success btn-sm">Full Time</button></div>
+                    <div className="col-4 col-md-3"><button type="button" className="btn btn-outline-primary btn-sm" >Min. 1 year</button></div>
                   </div>
-                  <div class="row btnrow my-4">
-                    <div class="col-4 col-md-3">Location : {job.city}, {job.state}</div>
-                    <div class="col-4 col-md-3">Address : {job.address}</div>
-                    <div class="col-4 col-md-3">Skills : {job.requirements.join(', ')}</div>
-                    <div class="col-4 col-md-3">Posted By : {job.employer.name} (Employer ID: {job.employer._id})</div>
+                  <div className="row btnrow my-4">
+                    <div className="col-4 col-md-3">Location : {job.city}, {job.state}</div>
+                    <div className="col-4 col-md-3">Address : {job.address}</div>
+                    <div className="col-4 col-md-3">Skills : {job.requirements.join(', ')}</div>
+                    <div className="col-4 col-md-3">Posted By : {job.employer.name} (Employer ID: {job.employer._id})</div>
                   </div>
                   <Link to="/Applyjobs" className="b1 btn btn-success">Apply</Link>
                 </div>
