@@ -13,6 +13,7 @@ import AudJobs from './components/AudJobs';
 function App() {
   return (
     <>
+    <div style={{backgroundColor: "aliceblue"}}>
       <Router>
         <Navbar />
         <div className="container">
@@ -29,6 +30,7 @@ function App() {
             </Routes>
         </div>
       </Router>
+      </div>
     </>
   );
 }

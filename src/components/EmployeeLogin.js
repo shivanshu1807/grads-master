@@ -35,9 +35,11 @@ const Login = (props) => {
 
     return (
         <>
-            <body>
+   
+            <body className="">
 
-                <MDBContainer fluid className="p-3 my-5 h-custom bg-primary">
+
+                <MDBContainer fluid className="p-3 my-5 h-custom">
 
                     <MDBRow>
 
@@ -46,7 +48,7 @@ const Login = (props) => {
                         </MDBCol>
 
                         <MDBCol col='4' md='6'>
-                            
+
                             {/* <div className="d-flex flex-row align-items-center justify-content-center text-center">
                                 <MDBRow>
                                     <div>
@@ -76,22 +78,22 @@ const Login = (props) => {
                                 <p className="text-center fw-bold mx-3 mb-0">Or</p>
                             </div> */}
                             <MDBCard className=' bg-glass shadow'>
-                            <MDBCardBody className='p-5'>
-                            <form onSubmit={handleSubmit}>
-                                <MDBInput wrapperClass='mb-4' placeholder='Email address' id='formControlLg' type='email' onChange={onChange} name='email' />
-                                <MDBInput wrapperClass='mb-4' placeholder='Password' id='formControlLg' type='password' onChange={onChange} name='password' />
+                                <MDBCardBody className='p-5'>
+                                    <form onSubmit={handleSubmit}>
+                                        <MDBInput wrapperClass='mb-4' placeholder='Email address' id='formControlLg' type='email' onChange={onChange} name='email' />
+                                        <MDBInput wrapperClass='mb-4' placeholder='Password' id='formControlLg' type='password' onChange={onChange} name='password' />
 
-                                <div className="d-flex justify-content-between mb-4">
+                                        <div className="d-flex justify-content-between mb-4">
 
-                                    <a href="!#">Forgot password?</a>
-                                </div>
+                                            <a href="!#">Forgot password?</a>
+                                        </div>
 
-                                <div className='text-center text-md-start mt-4 pt-2'>
-                                    <MDBBtn type="submit" className="" >Login</MDBBtn>
-                                    <p className="small fw-bold mt-2 pt-1 mb-2">Don't have an account? <Link to="/signup" className="link-danger">Register</Link></p>
-                                </div>
-                            </form>
-                            </MDBCardBody>
+                                        <div className='text-center text-md-start mt-4 pt-2'>
+                                            <MDBBtn type="submit" className="" >Login</MDBBtn>
+                                            <p className="small fw-bold mt-2 pt-1 mb-2">Don't have an account? <Link to="/signup" className="link-danger">Register</Link></p>
+                                        </div>
+                                    </form>
+                                </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
 
