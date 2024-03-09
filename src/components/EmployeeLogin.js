@@ -37,8 +37,7 @@ const Login = (props) => {
         <>
             <body>
 
-
-                <MDBContainer fluid className="p-3 my-5 h-custom">
+                <MDBContainer fluid className="p-3 my-5 h-custom bg-primary">
 
                     <MDBRow>
 
@@ -88,7 +87,7 @@ const Login = (props) => {
                                 </div>
 
                                 <div className='text-center text-md-start mt-4 pt-2'>
-                                    <MDBBtn type="submit" className="mb-0 px-5" size='lg'>Login</MDBBtn>
+                                    <MDBBtn type="submit" className="" >Login</MDBBtn>
                                     <p className="small fw-bold mt-2 pt-1 mb-2">Don't have an account? <Link to="/signup" className="link-danger">Register</Link></p>
                                 </div>
                             </form>
